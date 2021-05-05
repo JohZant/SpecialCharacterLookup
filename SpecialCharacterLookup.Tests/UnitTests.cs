@@ -32,7 +32,7 @@ namespace SpecialCharacterLookup.Tests
             // Create tests
             var pass = true;
 
-            foreach (var lookupVal in CharacterLookup.Value)
+            foreach (var lookupVal in characterLookup.Value)
             {
                 if (lookupVal != value)
                 {
@@ -61,7 +61,7 @@ namespace SpecialCharacterLookup.Tests
 
             for (char c = 'A'; c <= 'Z'; c++)
             {
-                if (CharacterLookup.Value[c] != value)
+                if (characterLookup.Value[c] != value)
                 {
                     pass = false;
                     break;
@@ -89,7 +89,7 @@ namespace SpecialCharacterLookup.Tests
 
             for (char c = 'a'; c <= 'z'; c++)
             {
-                if (CharacterLookup.Value[c] != value)
+                if (characterLookup.Value[c] != value)
                 {
                     pass = false;
                     break;
@@ -117,7 +117,7 @@ namespace SpecialCharacterLookup.Tests
 
             for (char c = '0'; c <= '9'; c++)
             {
-                if (CharacterLookup.Value[c] != value)
+                if (characterLookup.Value[c] != value)
                 {
                     pass = false;
                     break;
@@ -140,7 +140,7 @@ namespace SpecialCharacterLookup.Tests
             // Create Tests
             var pass = true;
 
-            for (int i = 0; i < CharacterLookup.Value.Length; i++)
+            for (int i = 0; i < characterLookup.Value.Length; i++)
             {
                 // Set temp character
                 char temp = (char)i;
@@ -149,9 +149,9 @@ namespace SpecialCharacterLookup.Tests
                 characterLookup.RegisterCharacter(temp, value);
 
                 // Test
-                if (CharacterLookup.Value[temp] != value)
+                if (characterLookup.Value[temp] != value)
                 {
-                    outputHelper.WriteLine($"Failed on character ({temp}). Expected: {value} - Actual: {CharacterLookup.Value[temp]}");
+                    outputHelper.WriteLine($"Failed on character ({temp}). Expected: {value} - Actual: {characterLookup.Value[temp]}");
                     pass = false;
                     break;
                 }

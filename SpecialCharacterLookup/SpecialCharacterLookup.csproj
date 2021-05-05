@@ -7,8 +7,8 @@
     <Description>Simple special character lookup class that allows the registering of characters for the lookup.</Description>
     <PackageId>SpecialCharacterLookup</PackageId>
     <PackageLicenseFile>license.txt</PackageLicenseFile>
-    <Version>1.0.2</Version>
-    <PackageReleaseNotes>Added Extension methods to test and manipulate text</PackageReleaseNotes>
+    <Version>1.1.0</Version>
+    <PackageReleaseNotes>Updated the Character Lookup to either use a shared table, as it already does, or to use its own table.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
