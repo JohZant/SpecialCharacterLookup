@@ -10,7 +10,7 @@ namespace SpecialCharacterLookup.Tests
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<CharacterLookup>();
+            services.AddScoped<CharacterLookup>();            
         }
 
 

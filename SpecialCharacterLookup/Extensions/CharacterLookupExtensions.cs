@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace SpecialCharacterLookup.Extensions
 {
@@ -17,7 +15,7 @@ namespace SpecialCharacterLookup.Extensions
         {
             foreach (var c in str)
             {
-                if (!CharacterLookup.Value[c])
+                if (!lookup.Value[c])
                 {
                     return false;
                 }
@@ -37,7 +35,7 @@ namespace SpecialCharacterLookup.Extensions
 
             foreach (var c in str)
             {
-                if (!CharacterLookup.Value[c])
+                if (!lookup.Value[c])
                 {
                     result.Add(c);
                 }
@@ -57,7 +55,7 @@ namespace SpecialCharacterLookup.Extensions
             int index = 0;
             foreach (char c in str)
             {
-                if (CharacterLookup.Value[c])
+                if (lookup.Value[c])
                 {
                     buffer[index] = c;
                     index++;
