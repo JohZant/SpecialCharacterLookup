@@ -27,6 +27,8 @@
                 this._lookup = new bool[65536];
             }
         }
+        
+        public static bool[] SharedValue => _sharedLookup;
 
         /// <summary>
         /// If true, the charactor lookup will share the values with all other instances of <see cref="CharacterLookup"/> marked as shared.
