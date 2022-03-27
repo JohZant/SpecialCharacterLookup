@@ -28,7 +28,7 @@
             }
         }
         
-        public static bool[] Value => _sharedLookup;
+        public static bool[] SharedValue => _sharedLookup;
 
         /// <summary>
         /// If true, the charactor lookup will share the values with all other instances of <see cref="CharacterLookup"/> marked as shared.
