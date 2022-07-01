@@ -48,8 +48,9 @@ namespace SpecialCharacterLookup.Extensions
         /// </summary>
         /// <param name="lookup"></param>
         /// <param name="str"></param>
+        /// <param name="replacement">Replaces character with the specified character. If null, the character marked as false will be removed rather than replaced</param>
         /// <returns></returns>
-        public static string CleanString(this CharacterLookup lookup, string str)
+        public static string CleanString(this CharacterLookup lookup, string str, char? replacement = null)
         {
             char[] buffer = new char[str.Length];
             int index = 0;
@@ -58,6 +59,11 @@ namespace SpecialCharacterLookup.Extensions
                 if (lookup.Value[c])
                 {
                     buffer[index] = c;
+                    index++;
+                }
+                else if (replacement.HasValue)
+                {
+                    buffer[index] = replacement.Value;
                     index++;
                 }
             }
