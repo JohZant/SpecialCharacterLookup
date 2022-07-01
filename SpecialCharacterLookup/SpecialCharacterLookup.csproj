@@ -1,21 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
-    <Authors>JohZant</Authors>
-    <Company />
-    <Description>Simple special character lookup class that allows the registering of characters for the lookup.</Description>
-    <PackageId>SpecialCharacterLookup</PackageId>
-    <PackageLicenseFile>license.txt</PackageLicenseFile>
-    <Version>1.1.0</Version>
-    <PackageReleaseNotes>Updated the Character Lookup to either use a shared table, as it already does, or to use its own table.</PackageReleaseNotes>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard1.0</TargetFramework>
+		<Authors>JohZant</Authors>
+		<Company />
+		<Description>Simple special character lookup class that allows the registering of characters for the lookup.</Description>
+		<PackageId>SpecialCharacterLookup</PackageId>
+		<PackageLicenseFile>license.txt</PackageLicenseFile>
+		<Version>1.1.1</Version>
+		<PackageReleaseNotes>Updated the Character Lookup "CleanString" extension to take a character to replace removed characters with.</PackageReleaseNotes>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="license.txt">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="license.txt">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
